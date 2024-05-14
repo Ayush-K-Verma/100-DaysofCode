@@ -1,1 +1,3 @@
 # 100-DaysofCode
+
+Welcome to my GitHub profile! I'm Ayush Kumar Verma, and I'm embarking on a 100 Days of Programming and Data Structures and Algorithms (DSA) challenge. This repository will be a daily log of my progress, where I'll be tackling various DSA problems, enhancing my problem-solving skills, and sharing my solutions and learnings. Join me on this journey as I dive deep into the core concepts of computer science and strive to become a more proficient and efficient developer. Let's learn and grow together!
