@@ -1,0 +1,9 @@
+Patterns:
+
+Patterns usually deals with nested loops.
+
+Steps:
+1. for the outer loop, count the number if lines.
+2. for the inner loop, focus on column and connect them somehow with the row.
+3. Print the * insidr inner for loop.
+4. Observe symmetry.
