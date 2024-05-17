@@ -1,0 +1,54 @@
+                                                HASHING
+
+Let’s first try to understand the importance of hashing using an example:
+
+Given an array of integers: [1, 2, 1, 3, 2] and we are given some queries: [1, 3, 4, 2, 10]. For each query, we need to find out how many times the number appears in the array. For example, if the query is 1 our answer would be 2, and if the query is 4 the answer will be 0. 
+
+Brute Force approach:
+As we have learned the ‘for loop’, the first approach that should come to our mind is to use it to solve this problem. For each query, we will iterate over the array using a loop. We will count the number of times the query number appears in that array i.e. increment the counter variable if the array element at that index equals the query number. 
+
+if the query contains 5 numbers and we call the function 5 times, the total time complexity will be O(5*N). 
+                    If the number of queries is Q, the time complexity will be O(Q*N).
+
+
+In order to optimize this approach, we need to use hashing. If we say the definition of hashing in a naive way, it is nothing but the combination of the steps, pre-storing, and fetching.
+
+
+            =================================================================
+Point to remember:
+We may encounter a problem where the maximum array element may be very large like 109. In that case, theoretically, we should declare an array of size 109+1. But we cannot do so. The maximum size of an array can be the following:
+
+inside main:            max size (int )= 10^6
+                        max size (bool )= 10^7
+
+outside main:            max size (int )= 10^7
+                         max size (bool )= 10^8
+
+So, with this method, we can solve the problems where the array is within a specific size. 
+
+            =================================================================
+
+How to hash large numbers like 10^9 or higher?
+using map
+
+Time complexity of map data structure:
+The total time complexity will be O(N * time taken by map data structure).
+
+Storing(i.e. insertion) and fetching(i.e. retrieval) in a C++ map, both take always O(logN) time complexity, where N = the size of the map. 
+
+
+
+But the unordered_map in C++ and HashMap in Java, both take O(1) time complexity to perform storing(i.e. insertion) and fetching(i.e. retrieval). Now, it is valid for the best case and the average case. 
+
+But in the worst case, this time complexity will be O(N) for unordered_map. Now, the worst case occurs very very rarely. It almost never happens and most of the time, we will be using unordered_map. 
+
+-----> Note: Our first priority will be always to use unordered_map and then map. If unordered_map gives a time limit exceeded error(TLE), we will then use the map.
+
+The time complexity in the worst case is O(N) because of the internal collision.
+
+                ====================================================
+
+Hashing is done using several methods. Among them, the three most common ones are
+        Division method
+        Folding method
+        Mid-Square method
