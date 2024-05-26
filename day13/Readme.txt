@@ -1,1 +1,1 @@
-No code. Took rest today. 
+No code. Took revised previous codes.
