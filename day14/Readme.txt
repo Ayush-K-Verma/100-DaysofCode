@@ -1,0 +1,1 @@
+1. Missing number - brute force and optimized.
