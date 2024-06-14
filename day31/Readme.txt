@@ -1,0 +1,1 @@
+Taken a rest day as I was not feeling good because of multiple power cuts and high temperature and humidity.
